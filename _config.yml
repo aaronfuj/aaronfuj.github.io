@@ -27,9 +27,15 @@ url: "http://aaronfujimoto.com" # the base hostname & protocol for your site, e.
 twitter_username: aaronfuj
 github_username: aaronfuj
 instagram_username: aaronfuj
+social_username: aaronfuj
+
+collections:
+  - projects
 
 # Build settings
-theme: minima
+#theme: jekyll-theme-cayman #minima
+#remote_theme: broccolini/swiss
+theme_color: blue
 plugins:
   - jekyll-feed
 
