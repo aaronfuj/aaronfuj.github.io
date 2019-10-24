@@ -23,7 +23,7 @@ email: aaronfuj@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A space to share knowledge, regardless of how useful it is.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://aaronfujimoto.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.aaronfujimoto.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aaronfuj
 github_username: aaronfuj
 instagram_username: aaronfuj
