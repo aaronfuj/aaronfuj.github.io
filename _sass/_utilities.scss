@@ -45,10 +45,10 @@
 .header-text { color: $color-foreground; }
 .header-social { fill: $color-foreground; }
 .header-social-accent { fill: $color-dot-accent; }
-.header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
+.header-link:hover { text-decoration: underline !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
 
-.footer-background { background-color: $color-background; }
+.footer-background { background-color: $color-muted-background; }
 .footer-text { color: $color-foreground; }
 
 /* Layout utilities */
