@@ -18,7 +18,7 @@ code {
 .nav-container {
   width: 100%;
 
-  @media (max-width: calc($breakpoint-lg + 1px)) {
+  @media (max-width: $breakpoint-lg) {
     position: fixed;
     top: 0;
     right: 0;
@@ -46,7 +46,7 @@ code {
 }
 
 .nav-open.nav-container {
-  @media (max-width: calc($breakpoint-lg + 1px)) {
+  @media (max-width: $breakpoint-lg) {
     color: $color-foreground;
     background-color: $color-muted-background;
   }
@@ -54,7 +54,7 @@ code {
 
 .nav-open {
   .nav {
-    @media (max-width: calc($breakpoint-lg + 1px)) {
+    @media (max-width: $breakpoint-lg) {
       display: block;
       width: 100%;
       padding-bottom: $spacer-2
@@ -81,7 +81,7 @@ code {
 }
 
 .nav-link {
-  @media (max-width: calc($breakpoint-lg + 1px)) {
+  @media (max-width: $breakpoint-lg) {
     padding-top: $spacer-1;
     padding-bottom: $spacer-1;
     font-size: $h4-size;
