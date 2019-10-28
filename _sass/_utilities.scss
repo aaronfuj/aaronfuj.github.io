@@ -46,6 +46,9 @@
 .header-social { fill: $color-foreground; }
 .header-social-accent { fill: $color-dot-accent; }
 .header-link:hover { text-decoration: underline !important; } // used for navigation links on homepage
+
+.header-background-2 { background-color: $color-foreground; }
+
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
 
 .footer-background { background-color: $color-muted-background; }

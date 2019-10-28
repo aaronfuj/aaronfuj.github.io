@@ -8,18 +8,7 @@
     <div>
 
       <header class="header-background">
-
-        <div class="clearfix header-border">
-          <ul class="list-reset right py-1 header-text font-smoothing">
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-              <li class="inline-block">
-                <a class="align-middle header-link bold mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-              </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
+        {% include navigation.html %}
 
         <div class="container mx-auto px-2 py-2 mb-2 clearfix header-text">
           <h1 class="h0 col-9 sm-width-full mt-3 mb-0 inline-block header-title" style="padding-top: 64px">{{ site.title }}</h1>
@@ -45,5 +34,11 @@
     {% include footer.html %}
 
   </body>
-
+  <script>
+      var container = document.getElementById("nav-container-id");
+			document.getElementById("open-nav").onclick = function () {
+				container.classList.toggle("nav-open");
+				return false;
+			};
+  </script>
 </html>

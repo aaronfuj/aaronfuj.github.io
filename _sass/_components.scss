@@ -15,6 +15,81 @@ code {
     padding: 1px 0px;
 }
 
+.nav-container {
+  width: 100%;
+
+  @media (max-width: calc($breakpoint-lg + 1px)) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+
+.nav-burger {
+  display: block;
+  position: fixed;
+  right: 0;
+  border: 0;
+  text-align: right;
+  padding-right: $spacer-2;
+
+  font-size: $h3-size;
+
+  @media (min-width: $breakpoint-lg) {
+    display: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.nav-open.nav-container {
+  @media (max-width: calc($breakpoint-lg + 1px)) {
+    color: $color-foreground;
+    background-color: $color-muted-background;
+  }
+}
+
+.nav-open {
+  .nav {
+    @media (max-width: calc($breakpoint-lg + 1px)) {
+      display: block;
+      width: 100%;
+      padding-bottom: $spacer-2
+    }
+  }
+
+  .nav-burger {
+    background-color: $color-muted-background;
+  }
+}
+
+.nav {
+  display: none;
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+  }
+
+  li {
+    display: block;
+    @media (min-width: $breakpoint-lg) {
+      display: inline-block;
+    }
+  }
+}
+
+.nav-link {
+  @media (max-width: calc($breakpoint-lg + 1px)) {
+    padding-top: $spacer-1;
+    padding-bottom: $spacer-1;
+    font-size: $h4-size;
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding-left: $spacer-2;
+  }
+}
 
 .prose {
 
