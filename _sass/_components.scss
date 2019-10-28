@@ -105,11 +105,6 @@ code {
     font-size: $prose-font-size;
     margin-bottom: 1em;
     width: 100%;
-
-    @media (min-width: $breakpoint-lg) {
-      width: (10 / 12 * 100%); // matches col-10
-    }
-
   }
 
   ul, ol {
@@ -125,13 +120,7 @@ code {
   }
 
   img {
-
     max-width: 100%;
-
-    @media (min-width: $breakpoint-lg) {
-      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
-    }
-
   }
 
   blockquote {
