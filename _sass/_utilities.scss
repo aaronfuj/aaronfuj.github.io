@@ -54,6 +54,90 @@
 .footer-background { background-color: $color-muted-background; }
 .footer-text { color: $color-foreground; }
 
+// colors
+.bg--blue {
+  background: $color--blue;
+  color: $color--white;
+}
+.bg--green {
+  background: $color--green;
+  color: $color--white;
+}
+.bg--yellow {
+  background: $color--yellow;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color--white;
+  }
+}
+.bg--red {
+  background: $color--red;
+  color: $color--white;
+}
+.bg--purple {
+  background: $color--purple;
+  color: $color--white;
+}
+.bg--darkest-gray {
+  background: $color--darkest-gray;
+  color: $color--white;
+}
+.bg--darker-gray {
+  background: $color--darker-gray;
+  color: $color--white;
+}
+.bg--dark-gray {
+  background: $color--dark-gray;
+  color: $color--white;
+}
+.bg--gray {
+  background: $color--gray;
+  color: $color--white;
+}
+.bg--light-gray {
+  background: $color--light-gray;
+}
+.bg--lighter-gray {
+  background: $color--lighter-gray;
+}
+.bg--lightest-gray {
+  background: $color--lightest-gray;
+}
+.bg--white {
+  background: $color--white;
+}
+a.bg--blue:hover {
+  background: darken($color--blue, $darken--button);
+}
+a.bg--green:hover {
+  background: darken($color--green, $darken--button);
+}
+a.bg--yellow:hover {
+  background: darken($color--yellow, $darken--button);
+}
+a.bg--red:hover {
+  background: darken($color--red, $darken--button);
+}
+a.bg--purple:hover {
+  background: darken($color--purple, $darken--button);
+}
+a.bg--darkest-gray:hover {
+  background: darken($color--darkest-gray, $darken--button);
+}
+a.bg--darker-gray:hover {
+  background: darken($color--darker-gray, $darken--button);
+}
+a.bg--dark-gray:hover {
+  background: darken($color--dark-gray, $darken--button);
+}
+a.bg--gray:hover {
+  background: darken($color--gray, $darken--button);
+}
+
 /* Layout utilities */
 .container { max-width: $container-width; }
 
@@ -192,15 +276,15 @@
 	text-align: center;
 
 	a {
-		background: #eee;
+		// background: #eee;
 		padding: 3px 5px;
 		border-radius: 5px;
-		color: #888;
+		// color: #888;
 		transition: .2s ease-in-out;
     text-decoration: none;
 
 		&:hover {
-			color: #555;
+			// color: #555;
 			text-decoration: none;
 		}
 	}
