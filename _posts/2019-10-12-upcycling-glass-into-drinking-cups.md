@@ -3,7 +3,7 @@ layout: post
 title:  "Upcycling Glass into Drinking Cups"
 date:   2019-10-09 10:15:00 -1000
 categories: diy
-tags: diy tutorials
+tags: diy tutorial
 ---
 For some reason, I really got interested in cutting old glass bottles into
 drinking cups.

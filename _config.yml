@@ -33,6 +33,18 @@ google_analytics: UA-149964063-1
 collections:
   - projects
 
+collections:
+  blog_tags:
+    title: Tags
+    output: true
+
+defaults:
+- scope:
+    path: ''
+    type: blog_tags
+  values:
+    layout: tag
+
 # Build settings
 #theme: jekyll-theme-cayman #minima
 #remote_theme: broccolini/swiss

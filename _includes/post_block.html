@@ -5,7 +5,7 @@
   </h2>
   {% for tag in include.post.tags %}
     <span class="blog-filter">
-      <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
+      <a href="{{ site.baseurl }}/blog/tags/{{ tag | slugify }}/">{{ tag | capitalize }}</a>
     </span>
   {% endfor %}
   <a class="no-underline h5 bold text-accent" title="{{ include.post.url | prepend: site.baseurl }}" href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.date | date: "%b %-d, %Y" }}</a>
