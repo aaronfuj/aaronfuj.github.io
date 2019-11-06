@@ -31,11 +31,11 @@ social_username: aaronfuj
 google_analytics: UA-149964063-1
 
 collections:
-  - projects
-
-collections:
   blog_tags:
     title: Tags
+    output: true
+  projects:
+    title: Projects
     output: true
 
 defaults:
