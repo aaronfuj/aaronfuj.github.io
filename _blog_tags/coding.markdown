@@ -1,5 +1,5 @@
 ---
 title: Coding
 permalink: "/blog/tags/coding/"
-color: gray
+color: dark-gray
 ---

@@ -18,20 +18,31 @@
     </ul>
   </div>
 </header> -->
-<div class="nav-container container px-2 clearfix mx-auto border-bottom-thick header-background-2" id="nav-container-id">
-  <div class="left py-1 link-primary text-accent">
-    <a class="align-middle" href="{{ site.baseurl }}/">
-      {{ site.title }}
-    </a>
+
+{% if page.color %}
+  {% assign title-accent="" %}
+  {% assign link-type="" %}
+{% else %}
+  {% assign title-accent="text-accent" %}
+  {% assign link-type="link-primary" %}
+{% endif %}
+
+<div class="nav-container bg--{{ page.color | default: 'white' }}" id="nav-container-id">
+  <div class="container px-2 clearfix mx-auto border-bottom-thick">
+    <div class="left py-1">
+      <a class="align-middle nav-title bold {{ title-accent }}" href="{{ site.baseurl }}/">
+        {{ site.title }}
+      </a>
+    </div>
+    <a class="nav-burger" id="open-nav" href="#">&#9776;</a>
+    <ul class="right nav py-1">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <li class="nav-link">
+          <a class="bold {{ link-type }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
-  <a class="nav-burger" id="open-nav" href="#">&#9776;</a>
-  <ul class="right nav py-1">
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-      <li class="nav-link">
-        <a class="link-primary" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
 </div>
