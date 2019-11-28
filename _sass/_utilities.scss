@@ -54,6 +54,41 @@
 .footer-background { background-color: $color-muted-background; }
 .footer-text { color: $color-foreground; }
 
+// Image overlay
+
+.relative {
+  position: relative;
+}
+
+.hero--image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero--overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(19,41,48,.8);
+}
+
+.hero--overlay--blue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(43, 163, 202, 0.8);
+}
+
 // colors
 .bg--blue {
   background: $color--blue;

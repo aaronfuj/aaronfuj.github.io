@@ -5,8 +5,9 @@ layout: default
 {% assign tag_posts = site.tags[tag] %}
 
 <div class="bg--{{page.color}}">
-  <div class="container mx-auto px-2">
-    <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
+  <div class="container mx-auto px-2 py-4">
+    <h1 class="h0 col-9 sm-width-full mb-0 inline-block" itemprop="name headline">{{ page.header }}</h1>
+    <p class="h4 lh-condensed font-smoothing py-1">{{ page.description }}</p>
   </div>
 </div>
 
