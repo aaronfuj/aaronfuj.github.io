@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Upcycling Glass into Drinking Cups"
+short: A step-by-step guide for cutting leftover glass bottles and converting them into drinking glasses
 date:   2019-10-09 10:15:00 -1000
 categories:
 tags: diy tutorial
+image: /assets/images/blog/glass/absolute_wide.jpg
 ---
 For some reason, I really got interested in cutting old glass bottles into
 drinking cups.
@@ -62,6 +64,12 @@ cut and last for a longer amount of time:
 
 SHOW SIDE-BY-SIDE EXAMPLES THAT ITERATE THE POINT WITH X vs CHECKMARKS
 
+{% capture good_choices %}
+**Good Choices**
+- Wine Bottles
+- Hard Alcohol/Spirit Bottles (i.e. Whisky, Vodka)
+{% endcapture %}
+{% include box.html color='red' content=good_choices %}
 **Good Choices**
 - Wine Bottles
 - Hard Alcohol/Spirit Bottles (i.e. Whisky, Vodka)
