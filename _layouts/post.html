@@ -7,7 +7,7 @@ layout: default
     <div>
       <p class="h4 mb-2">{{ page.short }}</p>
     </div>
-    <p class="mb-3 py-2 bold h4">
+    <p class="mb-3 bold">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
       {% for tag in page.tags %}
         {% assign post_tag_downcase = tag | downcase %}
