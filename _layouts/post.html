@@ -4,29 +4,25 @@ layout: default
 <div class="bg--white">
   <article class="container px-2 mx-auto" itemscope itemtype="http://schema.org/BlogPosting">
     <h1 class="h0 sm-width-full mt-3 mb-2 inline-block" itemprop="name headline">{{ page.title }}</h1>
-    <div class="col-4 sm-width-full mt-1">
-      <p class="mb-3 py-2 bold h4">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-        {% for tag in page.tags %}
-          {% assign post_tag_downcase = tag | downcase %}
-          {% for site_tag in site.blog_tags %}
-            {% assign site_tag_title = site_tag.title | downcase %}
-            {% if site_tag_title == post_tag_downcase %}
-
-              <span class="blog-filter">
-              <a href="{{ site.baseurl }}/blog/tags/{{ tag | slugify }}/" class="{% if site_tag.color %} bg--{{site_tag.color}}{% endif %}">{{ tag | capitalize }}</a>
-              </span>
-
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </p>
     <div>
       <p class="h4 mb-2">{{ page.short }}</p>
     </div>
-    <div class="sm-width-full mt-1">
-      <p class="h4 bold"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-    </div>
+    <p class="mb-3 py-2 bold h4">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% for tag in page.tags %}
+        {% assign post_tag_downcase = tag | downcase %}
+        {% for site_tag in site.blog_tags %}
+          {% assign site_tag_title = site_tag.title | downcase %}
+          {% if site_tag_title == post_tag_downcase %}
+
+            <span class="blog-filter">
+            <a href="{{ site.baseurl }}/blog/tags/{{ tag | slugify }}/" class="{% if site_tag.color %} bg--{{site_tag.color}}{% endif %}">{{ tag | capitalize }}</a>
+            </span>
+
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </p>
 
     {% if page.image %}
     <div>
