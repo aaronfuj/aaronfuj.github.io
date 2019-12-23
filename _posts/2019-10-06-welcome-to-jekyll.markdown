@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+short: A stock blog post
 date:   2019-10-06 23:46:57 -1000
 categories:
 tags: jekyll

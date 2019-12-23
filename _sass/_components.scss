@@ -91,6 +91,10 @@ code {
   }
 }
 
+.img-responsive {
+  max-width: 100%;
+}
+
 .prose {
 
   a {
@@ -107,12 +111,33 @@ code {
     width: 100%;
   }
 
-  ul, ol {
+  ol {
     padding-left: 40px;
   }
 
-  li {
+  ul {
+    list-style-type: none;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    overflow: hidden
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 1.2em;
     margin-bottom: 0.5em;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: auto;
+      display: inline-block;
+      padding-right: 0;
+      color: #edbf36;
+      font-size: 140%;
+      line-height: 1em;
+      content: "\2022";
+    }
 
     ul li, ol li {
       margin-bottom: 0;

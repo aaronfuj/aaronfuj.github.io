@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="bg--white">
-  <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
-    <h1 class="h0 col-9 sm-width-full mt-3 mb-0 inline-block" itemprop="name headline">{{ page.title }}</h1>
+  <article class="container px-2 mx-auto" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 class="h0 sm-width-full mt-3 mb-2 inline-block" itemprop="name headline">{{ page.title }}</h1>
     <div class="col-4 sm-width-full mt-1">
       <p class="mb-3 py-2 bold h4">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
@@ -21,7 +21,18 @@ layout: default
           {% endfor %}
         {% endfor %}
       </p>
+    <div>
+      <p class="h4 mb-2">{{ page.short }}</p>
     </div>
+    <div class="sm-width-full mt-1">
+      <p class="h4 bold"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    </div>
+
+    {% if page.image %}
+    <div>
+      <img src="{{ page.image }}" class="img-responsive" />
+    </div>
+    {% endif %}
 
     <div class="prose" itemprop="articleBody">
         {{ content }}
