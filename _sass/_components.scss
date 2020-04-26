@@ -107,7 +107,6 @@ code {
 
   p, ol, ul {
     font-size: $prose-font-size;
-    margin-bottom: 1em;
     width: 100%;
   }
 
@@ -118,14 +117,12 @@ code {
   ul {
     list-style-type: none;
     padding-left: 1em;
-    margin-bottom: 1em;
     overflow: hidden
   }
 
   ul li {
     position: relative;
     padding-left: 1.2em;
-    margin-bottom: 0.5em;
 
     &:before {
       position: absolute;
@@ -137,10 +134,6 @@ code {
       font-size: 140%;
       line-height: 1em;
       content: "\2022";
-    }
-
-    ul li, ol li {
-      margin-bottom: 0;
     }
   }
 
@@ -176,19 +169,12 @@ code {
     color: $color-body-text;
     border-style: solid;
     border-width: thin;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
   }
 
   dt {
     font-weight: bold;
     font-style: italic;
     line-height: 1.25;
-  }
-
-  dd {
-    font-style: italic;
-    margin-bottom: 0.5em;
   }
 
   // Markdown tables
