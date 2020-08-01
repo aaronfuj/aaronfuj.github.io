@@ -17,7 +17,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'profile_skim_portrait.png',
   paragraphOne:
     'Hello! My name is Aaron Fujimoto and I have had several Software Engineering related titles over the years. ' +
     'Ultimately, I enjoy using technology to solve problems.',
