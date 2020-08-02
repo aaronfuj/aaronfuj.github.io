@@ -32,8 +32,8 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'SurfNewsNetwork (Android App)',
+    img: 'surf_news_network_mocks.png',
+    title: 'Surf News Network (Android App)',
     info:
       'An Android App for Hawaii Surf Reports, Forecasts, and Tide Charts to allow less time on your phone and more time at the beach',
     info2: '',
@@ -42,19 +42,20 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'hawaii_power_ballot_screenshot.png',
     title: 'Hawaii Power Ballot',
     info: 'A robust guide to who and what will be on the 2018 General Election ballot',
-    info2: '',
+    info2: 'A collaborative project with friends to aid for the 2016 and 2018 Hawaii Elections',
     url: 'http://www.hawaiipowerballot.com/',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/axelson/hawaii-power-ballot', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'contest_scoreboard_screenshot.png',
     title: 'Contest Scoreboard',
     info: 'A real-time, live scoring software to replace traditional pen and paper for contests',
-    info2: '',
+    info2:
+      'Used as part of DB Skimboards Chambers, Exile Oktoberfest, and smaller Hawaii skim contests',
     url: 'https://contest-scoreboard.herokuapp.com/',
     repo: 'https://github.com/aaronfuj/contest_scoreboard', // if no repo, the button will not show up
   },
