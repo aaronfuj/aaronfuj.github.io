@@ -1,3 +1,47 @@
+## Getting Started
+
+1. Install Gatsby CLI
+
+`npm install -g gatsby-cli`
+
+2. Install project dependencies.
+
+`npm install`
+
+3. Develop and deploy
+
+`npm run develop`
+`npm run deploy`
+
+## Running
+
+During development there are multiple ways to run the project.
+
+- `npm run develop` - Runs a development server that reacts to changes as they come in. Behind the scenes this runs `gatsby develop`.
+
+## Building
+
+Building a production project can be done via:
+
+- `npm run build` - Builds the static files into the `public` area
+
+## Cleaning
+
+Cleaning will clear out the production build.
+
+- `npm run clean` - the equivalent of `gatsby clean`.
+
+## Deploy the project to GitHub Pages (production)
+
+- `npm run deploy`
+
+# Depedencies/References
+
+This project is based off of the Gatsby starter, Simplefolio.
+
+- [Gatsby Starter Page](https://www.gatsbyjs.org/starters/cobidev/gatsby-simplefolio/)
+- [GitHub for Simplefolio](https://github.com/cobidev/gatsby-simplefolio)
+
 # Gatsby Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/gatsby-simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/gatsby-simplefolio)
 
 ## A clean, beautiful and responsive portfolio template for Developers
@@ -100,7 +144,7 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 ---
 
-## Instructions:
+## Simplefolio Instructions:
 
 ### Step 1 - STRUCTURE
 
@@ -110,10 +154,10 @@ Go to `/src/mock/data.js` and fill your information, they are 5 objects:
 
 ```javascript
 export const heroData = {
-  title: "", // Hello, my name is
-  name: "", // John
-  subtitle: "", // I'm the Unknown Developer.
-  cta: "", // Know more
+  title: '', // Hello, my name is
+  name: '', // John
+  subtitle: '', // I'm the Unknown Developer.
+  cta: '', // Know more
 };
 ```
 
@@ -123,11 +167,11 @@ export const heroData = {
 
 ```javascript
 export const aboutData = {
-  img: "profile.jpg", // put your profile image (recommended aspect radio: square)
-  paragraphOne: "",
-  paragraphTwo: "",
-  paragraphThree: "",
-  resume: "https://www.resumemaker.online/es.php", // if no resume, the button will not show up
+  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+  paragraphOne: '',
+  paragraphTwo: '',
+  paragraphThree: '',
+  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 ```
 
@@ -165,9 +209,9 @@ export const projectsData = [
 
 ```javascript
 export const contactData = {
-  cta: "", // call to action text for the contact section
-  btn: "", // text inside the button
-  email: "",
+  cta: '', // call to action text for the contact section
+  btn: '', // text inside the button
+  email: '',
 };
 ```
 
@@ -181,23 +225,23 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: "twitter",
-      url: "", // your twitter url
+      name: 'twitter',
+      url: '', // your twitter url
     },
     {
       id: nanoid(),
-      name: "codepen",
-      url: "", // your codepen url
+      name: 'codepen',
+      url: '', // your codepen url
     },
     {
       id: nanoid(),
-      name: "linkedin",
-      url: "", // your linkedin url
+      name: 'linkedin',
+      url: '', // your linkedin url
     },
     {
       id: nanoid(),
-      name: "github",
-      url: "", // your github url
+      name: 'github',
+      url: '', // your github url
     },
   ],
 };
