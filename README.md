@@ -9,4 +9,4 @@ A site for sharing knowledge
 ## Run the following commands
 1. `bundle install` to install required dependencies
 2. `bundle update` to ensure everything is up to date
-3. `bundle exec jekyll serve` to run the web server locally
+3. `bundle exec jekyll serve` to run the web server locally (`bundle exec jekyll serve --drafts` for running with drafts included)
