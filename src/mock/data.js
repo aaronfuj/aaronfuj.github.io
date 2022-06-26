@@ -32,6 +32,15 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    title: 'Local Surf Report (Oahu)',
+    info:
+      'A mobile friendly website for Hawaii Surf Reports, Forecasts, and Tide Charts using free data from NOAA',
+    info2: '',
+    url: 'https://surf.aaronfujimoto.com',
+    repo: 'https://github.com/aaronfuj/oahu-surf-report', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'surf_news_network_mocks.png',
     title: 'Surf News Network (Android App)',
     info:
