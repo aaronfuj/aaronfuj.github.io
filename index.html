@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aaron Fujimoto</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c74cce7b6b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="shortcut icon" type="image/png" href="favicon.png">
   </head>
@@ -23,7 +23,8 @@
 
         <!-- Title -->
         <div class="column is-8 is-offset-2 context-box">
-          <div class="columns px-6 py-6">
+          <!-- Bio -->
+          <div class="columns px-6 pt-6">
             <div class="column intro">
               <h1 class="title is-1 mb-1">Aaron Fujimoto</h1>
               <h2 class="subtitle has-text-primary mt-1 has-text-weight-semibold is-4">Software Engineer</h2>
@@ -33,13 +34,11 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Projects -->
-        <div class="column is-8 is-offset-2 context-box mt-6">
-          <div class="columns px-6 py-6">
+          <!-- Projects -->
+          <div class="columns px-6 pb-6">
             <div class="column projects">
-              <h1 class="title is-2 has-text-centered">Projects</h1>
+              <h2 class="subtitle has-text-primary mt-1 has-text-weight-semibold is-4">Projects</h2>
               <div class="columns is-multiline">
 
                 <div class="column is-half-desktop is-full-tablet">
@@ -51,7 +50,7 @@
                     <a target="_blank" rel="noopener noreferrer" class="button is-primary is-small" href="https://surf.aaronfujimoto.com">See Live</a>
                     <a target="_blank" rel="noopener noreferrer" class="button is-outline is-small" href="https://github.com/aaronfuj/oahu-surf-reportt">
                       <span class="icon">
-                        <i class="fab fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
                       </span>
                     </a>
                   </div>
@@ -68,13 +67,21 @@
                 </div>
 
                 <div class="column is-half-desktop is-full-tablet">
+                  <h2 class="title is-5">Hawaii Cover Crop Calculator</h2>
+                  <p>A Web App that uses plant-available nitrogen mineralization rates from different areas, nitrogen content and biomass production of cover crop residues to estimate the nitrogen contribution from cover crop residues in Hawaii.</p>
+                  <div class="block pt-2">
+                    <a target="_blank" rel="noopener noreferrer" class="button is-primary is-small" href="https://hawaiicovercropcalc.oahurcd.org/">See Live</a>
+                  </div>
+                </div>
+
+                <div class="column is-half-desktop is-full-tablet">
                   <h2 class="title is-5">Hawaii Power Ballot</h2>
                   <p>A robust guide to who and what will be on the 2018 General Election ballot</p>
                   <p class="pt-2">A collaborative project with friends to aid for the 2016 and 2018 Hawaii Elections</p>
                   <div class="block pt-2">
                     <a target="_blank" rel="noopener noreferrer" class="button is-outline is-small" href="https://github.com/axelson/hawaii-power-ballot">
                       <span class="icon">
-                        <i class="fab fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
                       </span>
                     </a>
                   </div>
@@ -87,7 +94,7 @@
                   <div class="block pt-2">
                     <a target="_blank" rel="noopener noreferrer" class="button is-outline is-small" href="https://github.com/aaronfuj/contest-scoreboard">
                       <span class="icon">
-                        <i class="fab fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
                       </span>
                     </a>
                   </div>
@@ -104,19 +111,24 @@
           <nav class="level">
             <div class="level-left">
               <div class="level-item">
+                <a href="https://blog.aaronfujimoto.com/" rel="noopener noreferrer" target="_blank" aria-label="blog">
+                  <span class="icon">
+                    <i class="fa-solid fa-book"></i>
+                  </span>
+                </a> &emsp;
                 <a href="https://www.linkedin.com/in/aaronfujimoto/" rel="noopener noreferrer" target="_blank" aria-label="linkedin">
                   <span class="icon">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin"></i>
                   </span>
                 </a> &emsp;
                 <a href="https://github.com/aaronfuj" rel="noopener noreferrer" target="_blank" aria-label="github">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i class="fa-brands fa-github"></i>
                   </span>
                 </a> &emsp;
                 <a href="mailto:aaronfuj@gmail.com" rel="noopener noreferrer" target="_blank" aria-label="envelope">
                   <span class="icon">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fa-solid fa-envelope"></i>
                   </span>
                 </a>
               </div>
@@ -168,10 +180,9 @@
       letter-spacing: -1px;
     }
 
-    .fab,
-    .fas {
+    .fa-brands,
+    .fa-solid {
       color: var(--textLight);
-      margin-right: 1rem;
     }
 
   </style>
